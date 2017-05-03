@@ -1,6 +1,6 @@
 {
   "name": "@remy/snap",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Creates a snapshot of a url with HTML suffix removed in favour of directories",
   "main": "lib/index.js",
   "bin": {
