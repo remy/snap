@@ -1,0 +1,24 @@
+snap - Creates a snapshot of a URL with HTML suffix removed in favour of directories
+
+USAGE:
+  snap <url> [options]
+
+ARGUMENTS:
+  url                  The URL to snapshot (e.g., example.com or http://example.com)
+
+OPTIONS:
+  --output <dir>       Output directory for the snapshot (defaults to the domain name)
+
+EXAMPLES:
+  snap example.com
+  snap http://example.com
+  snap http://localhost:3000
+  snap example.com --output my-snapshot
+
+DESCRIPTION:
+  Crawls a website and creates a local snapshot. HTML files are saved as directories
+  (e.g., /path/ becomes /path/index.html) to create clean URLs.
+
+  If the output directory already exists with files, you will be prompted to choose
+  whether to delete the existing files or merge with them (default). When merging,
+  existing files will not be overwritten.
